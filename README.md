@@ -1,10 +1,10 @@
 # dotfiles
 dotfiles for all the arch bullshit tryna learn typeshit frfr
 # This is a test for the markview function
+dependencies
 
-```python
+pacman:
+nvim hyprland rofi fcitx5 fcitx5-configtool ncsway
 
-```
-
-## testing
-testing if my fucking ssh key still work or not
+yay :
+oh-my-posh fcitx5-bamboo
