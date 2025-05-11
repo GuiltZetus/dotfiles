@@ -5,7 +5,7 @@
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
     "modules-center": ["custom/music"],
-    "modules-right": ["pulseaudio", "backlight", "battery", "clock", "tray", "custom/lock", "custom/power"],
+    "modules-right": ["pulseaudio","battery", "clock", "tray", "custom/lock", "custom/power"],
     "wlr/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
@@ -30,8 +30,8 @@
     "clock": {
         "timezone": "Asia/Ho_Chi_Minh",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": " {:%d/%m/%Y}",
-        "format": " {:%H:%M}"
+        "format-alt": "{:%d/%m/%Y}",
+        "format": "{:%H:%M}"
     },
     "backlight": {
         "device": "intel_backlight",
@@ -39,15 +39,7 @@
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
     "battery": {
-        "states": {
-            "warning": 30,
-            "critical": 15
-        },
-        "format": "{icon}",
-        "format-charging": "",
-        "format-plugged": "",
-        "format-alt": "{icon}",
-        "format-icons": ["", "",  "", "", "", "", "", "", "", "", "", ""]
+        "format": "{capacity}%"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
