@@ -4,7 +4,7 @@ dotfiles for all the arch bullshit tryna learn typeshit frfr
 dependencies
 
 pacman:
-nvim hyprland rofi fcitx5 fcitx5-configtool ncsway
+nvim hyprland rofi fcitx5 fcitx5-configtool ncsway brightnessctl
 
 yay :
 oh-my-posh fcitx5-bamboo
