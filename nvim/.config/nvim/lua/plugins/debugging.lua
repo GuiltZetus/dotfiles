@@ -4,6 +4,7 @@ return {
     "rcarriga/nvim-dap-ui",
     "nvim-neotest/nvim-nio",
   },
+  -- this is for pure testing of the fucking git bullshit
   config = function()
     local dap = require "dap"
     local dapui = require "dapui"
