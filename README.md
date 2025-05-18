@@ -1,10 +1,13 @@
-# dotfiles
+# Description
 dotfiles for all the arch bullshit tryna learn typeshit frfr
-# This is a test for the markview function
-dependencies
 
-pacman:
+# Dependencies
+
+## pacman:
 nvim hyprland rofi fcitx5 fcitx5-configtool ncsway brightnessctl
 
-yay :
+## yay:
 oh-my-posh fcitx5-bamboo
+
+## vulkan dependencies (pacman):
+vulkan-devel glfw-wayland glslc
