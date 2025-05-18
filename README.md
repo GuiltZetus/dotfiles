@@ -10,4 +10,4 @@ nvim hyprland rofi fcitx5 fcitx5-configtool ncsway brightnessctl
 oh-my-posh fcitx5-bamboo
 
 ## vulkan dependencies (pacman):
-vulkan-devel glfw-wayland glslc
+vulkan-devel glfw-wayland glslc libxi libxxf86vm glm shaderc
