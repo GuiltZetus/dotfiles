@@ -1,0 +1,42 @@
+
+//@theme "/usr/share/rofi/themes/sidebar.rasi"
+
+@theme "/usr/share/rofi/themes/gruvbox-dark-soft.rasi"
+
+entry{
+  placeholder : "App to run";
+  cursor: pointer;
+}
+
+element {
+  orientation: horizontal;
+  children: [ element-text, element-icon ];
+  background-color: rgb(100,115,104);
+}
+
+element-icon {
+  size: 1.5em;
+  background-color: rgb(100,115,104);
+}
+
+entry, element-text{
+  background-color: rgb(100,115,104);
+  spacing : 0;
+  padding:0;
+  margin:0;
+}
+
+window{
+  width: 30%;
+  height: 30%;
+  border: 0;
+  // background-color: rgb(100,115,104);
+}
+
+inputbar, listview, scrollbar, case-indicator, prompt{
+  background-color: rgb(100,115,104);
+}
+
+inputbar{
+  children:[entry];
+}
