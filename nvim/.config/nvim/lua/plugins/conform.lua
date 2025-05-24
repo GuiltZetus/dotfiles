@@ -36,20 +36,26 @@ return {
         shfmt = {
           prepend_args = { "-i", "2" },
         },
+        cpp = {
+          args = {
+            "--style=Mozilla",
+          },
+        },
       },
     },
+
     init = function()
       -- If you want the formatexpr, here is the place to set it
       vim.o.formatexpr = "v:lua.require'conform'.formatexpr()"
     end,
   },
 
-  {
-    "zapling/mason-conform.nvim",
-    event = "VeryLazy",
-    dependencies = { "conform.nvim" },
-    config = function()
-      require "configs.mason-conform"
-    end,
-  },
+  -- {
+  --   "zapling/mason-conform.nvim",
+  --   event = "VeryLazy",
+  --   dependencies = { "conform.nvim" },
+  --   config = function()
+  --     require "configs.mason-conform"
+  --   end,
+  -- },
 }
