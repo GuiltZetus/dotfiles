@@ -1,6 +1,9 @@
 #
 # ~/.bashrc
 #
+# export QT_IM_MODULE=fcitx
+# export GTK_IM_MODULE=fcitx
+# export XMODIFIERS=@im=fcitx # Still useful for XWayland fallback
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return

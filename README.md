@@ -23,4 +23,9 @@ obsidian syncthing
 systemctl --user enable syncthing.service
 systemctl --user start syncthing.service
 ```
+# Additional Settings
+### For any Electron Application you need to launch them with these settings 
+```
+--enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime
+```
 
