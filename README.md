@@ -16,7 +16,7 @@ vulkan-devel glfw-wayland glslc libxi libxxf86vm glm shaderc
 # useful application
 ## with pacman
 ```
-obsidian syncthing
+obsidian syncthing yt-dlp ffmpeg
 ```
 ### Make sure you start the system service for syncthing
 ```

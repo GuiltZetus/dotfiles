@@ -1,0 +1,31 @@
+# General output template for audio files
+# Saves to 'Music/ForMySoul' directly in your home directory
+--paths home:$HOME/Music/ForMySoul
+-o "%(playlist_index)s - %(title)s.%(ext)s"
+
+# Extract only audio
+-x
+--extract-audio
+
+# Convert audio to best quality (e.g., mp3, m4a, opus, etc., depending on source)
+--audio-format best
+
+# Ensure the highest quality audio stream is selected
+-f "bestaudio/best"
+
+# Embed metadata into the audio file (e.g., title, artist, album)
+--embed-metadata
+
+# Embed the thumbnail as album art
+--embed-thumbnail
+
+# Keep the original video file after extracting audio (optional)
+# Remove this line if you only want the audio file and no video remains
+-k
+
+# Download entire playlists
+--yes-playlist
+
+# Ignore errors and continue downloading if a video fails
+--ignore-errors
+--continue
