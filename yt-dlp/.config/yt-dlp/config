@@ -20,8 +20,8 @@
 --embed-thumbnail
 
 # Keep the original video file after extracting audio (optional)
-# Remove this line if you only want the audio file and no video remains
--k
+# Comment this line if you only want the audio file and no video remains
+# -k
 
 # Download entire playlists
 --yes-playlist
