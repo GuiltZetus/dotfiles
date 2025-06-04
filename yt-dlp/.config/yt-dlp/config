@@ -29,3 +29,6 @@
 # Ignore errors and continue downloading if a video fails
 --ignore-errors
 --continue
+
+#no overwrite existing song
+--no-overwrites
