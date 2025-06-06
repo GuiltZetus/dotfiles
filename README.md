@@ -3,7 +3,7 @@ dotfiles for all my arch config
 # Dependencies
 ## pacman:
 ```
-nvim hyprland rofi fcitx5 fcitx5-configtool fcitx5-chinese-addons ncsway brightnessctl
+nvim hyprland rofi fcitx5 fcitx5-configtool fcitx5-chinese-addons ncsway brightnessctl hyprsunset 
 ```
 ## yay:
 ```
