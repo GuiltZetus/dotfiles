@@ -1,5 +1,12 @@
 # Description
 dotfiles for all my arch config 
+
+# Installation
+```
+cd
+mkdir .dotfiles
+git clone https://github.com/GuiltZetus/dotfiles.git ~/.dotfiles
+```
 # Dependencies
 ## pacman:
 ```
@@ -29,3 +36,8 @@ systemctl --user start syncthing.service
 --enable-features=UseOzonePlatform --ozone-platform=wayland --enable-wayland-ime
 ```
 
+# Run this in terminal 
+```
+cd .dotfiles
+stow alacritty hypr nvim rofi waybar yt-dlp
+```
