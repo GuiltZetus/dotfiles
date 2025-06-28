@@ -41,3 +41,10 @@ systemctl --user start syncthing.service
 cd .dotfiles
 stow alacritty hypr nvim rofi waybar yt-dlp
 ```
+
+
+# Home server settings
+## Dependencies
+```
+sudo apt install apache2 mariadb-server php libapache2-mod-php php-gd php-curl php-zip php-xml php-mbstring php-imagick php-mysql php-fpm php-intl php-json php-gmp php-bcmath php-apcu redis-server ufw unzip -y 
+```
