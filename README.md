@@ -14,7 +14,7 @@ nvim hyprland rofi fcitx5 fcitx5-configtool fcitx5-chinese-addons ncsway brightn
 ```
 ## yay:
 ```
-oh-my-posh fcitx5-bamboo python-mutagen
+oh-my-posh fcitx5-bamboo python-mutagen hyprshot
 ```
 ## vulkan dependencies (pacman):
 ```
