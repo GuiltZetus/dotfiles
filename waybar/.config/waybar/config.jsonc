@@ -57,7 +57,7 @@
     },
     "custom/power": {
         "tooltip": false,
-        "on-click": "wlogout &",
+        "on-click": "bash -c 'rofi -show powermenu -modi \"powermenu:~/.dotfiles/rofi/.config/rofi/power_menu.sh\" -theme ~/.config/rofi/config.rasi'",
         "format": ""
     }
 }
