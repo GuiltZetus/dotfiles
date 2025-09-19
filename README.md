@@ -10,7 +10,7 @@ git clone https://github.com/GuiltZetus/dotfiles.git ~/.dotfiles
 # Dependencies
 ## pacman:
 ```
-nvim hyprland rofi fcitx5 fcitx5-configtool fcitx5-chinese-addons ncsway brightnessctl hyprsunset 
+nvim hyprland rofi fcitx5 fcitx5-configtool fcitx5-chinese-addons ncsway brightnessctl hyprsunset hyprpaper
 ```
 ## yay:
 ```
