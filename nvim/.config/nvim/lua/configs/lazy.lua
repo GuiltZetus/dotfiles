@@ -1,18 +1,17 @@
 return {
   defaults = { lazy = true },
   install = { colorscheme = { "nvchad" } },
-
   ui = {
     icons = {
-      ft = "",
+      ft = "",
       lazy = "󰂠 ",
-      loaded = "",
-      not_loaded = "",
+      loaded = "",
+      not_loaded = "",
     },
   },
-
   performance = {
     rtp = {
+      reset = false, -- ADD THIS LINE
       disabled_plugins = {
         "2html_plugin",
         "tohtml",
@@ -40,7 +39,7 @@ return {
         "optwin",
         "compiler",
         "bugreport",
-        "ftplugin",
+        -- "ftplugin",  -- COMMENT THIS OUT
       },
     },
   },

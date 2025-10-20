@@ -8,12 +8,12 @@ return {
     end,
   },
 
-  -- {
-  --   "williamboman/mason-lspconfig.nvim",
-  --   event = "VeryLazy",
-  --   dependencies = { "nvim-lspconfig" },
-  --   config = function()
-  --     require "configs.mason-lspconfig"
-  --   end,
-  -- },
+  {
+    "mason-org/mason-lspconfig.nvim",
+    opts = {},
+    dependencies = {
+      { "mason-org/mason.nvim", opts = {} },
+      "neovim/nvim-lspconfig",
+    },
+  },
 }

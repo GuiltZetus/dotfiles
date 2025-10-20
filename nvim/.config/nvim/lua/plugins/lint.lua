@@ -1,7 +1,7 @@
 return {
   "mfussenegger/nvim-lint",
-  event = { "BufReadPre", "BufNewFile" },
+  lazy = false,
   config = function()
-    require "configs.lint"
+    -- Do nothing here - we'll load it manually in init.lua
   end,
 }
