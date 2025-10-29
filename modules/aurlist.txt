@@ -1,0 +1,16 @@
+anki
+cloudflare-warp-bin
+electron22-bin
+gitkraken-cli
+grub-customizer
+ibus-bamboo
+libgen-cli-bin
+mirage
+oh-my-posh
+pear-desktop
+phonon-qt6-mpv
+portable
+unityhub
+z-library-bwrap
+zalo-macos
+zen-browser-bin
