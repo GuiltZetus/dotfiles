@@ -1,12 +1,14 @@
 # Description
 dotfiles for all my arch config 
 
+
 # Installation
 ```
 cd
 mkdir .dotfiles
 git clone https://github.com/GuiltZetus/dotfiles.git ~/.dotfiles
 ```
+
 # Dependencies
 ## pacman:
 ```
@@ -19,7 +21,10 @@ oh-my-posh fcitx5-bamboo python-mutagen hyprshot mirage
 ## vulkan dependencies (pacman):
 ```
 vulkan-devel glfw-wayland glslc libxi libxxf86vm glm shaderc
+
 ```
+
+
 # useful application
 ## with pacman
 ```
@@ -30,6 +35,8 @@ obsidian syncthing yt-dlp ffmpeg
 systemctl --user enable syncthing.service
 systemctl --user start syncthing.service
 ```
+
+
 # Additional Settings
 ### For any Electron Application you need to launch them with these settings 
 ```

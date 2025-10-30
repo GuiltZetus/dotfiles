@@ -4,8 +4,8 @@
     // "width": 1280, // Waybar width
     // Choose the order of the modules
     "modules-left": ["hyprland/workspaces"],
-    "modules-center": ["custom/music"],
-    "modules-right": [ "pulseaudio", "clock", "tray", "custom/power"],
+    "modules-center": [],
+    "modules-right": [ "custom/music" ,"pulseaudio", "clock", "tray"],
     "wlr/workspaces": {
          "disable-scroll": true,
          "sort-by-name": true,
@@ -18,15 +18,12 @@
         "icon-size": 21,
         "spacing": 10
     },
-    "custom/music": {
-        "format": "  {}",
-        "escape": true,
-        "interval": 5,
-        "tooltip": false,
-        "exec": "playerctl metadata --format='{{ title }}'",
-        "on-click": "playerctl play-pause",
-        "max-length": 50
-    },
+"custom/music": {
+    "format": "{}",
+    "exec": "bash -c 'status=$(playerctl status 2>/dev/null); if [[ $status == \"Playing\" ]]; then icon=; elif [[ $status == \"Paused\" ]]; then icon=; else icon=; fi; artist=$(playerctl metadata artist 2>/dev/null); title=$(playerctl metadata title 2>/dev/null); if [[ -n \"$title\" ]]; then echo \"$icon  $artist - $title\"; else echo \"$icon\"; fi'",
+    "signal": 8,
+    "on-click": "playerctl play-pause && pkill -RTMIN+8 waybar"
+},
     "clock": {
         "timezone": "Asia/Ho_Chi_Minh",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",

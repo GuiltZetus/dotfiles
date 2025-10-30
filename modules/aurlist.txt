@@ -1,4 +1,5 @@
 anki
+nerd-fonts-caskaydia-mono
 cloudflare-warp-bin
 electron22-bin
 gitkraken-cli

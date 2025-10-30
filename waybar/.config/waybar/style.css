@@ -1,102 +1,92 @@
-@import "macchiato.css";
+/* === Waybar Minimalistic Style (Fixed Padding) === */
 
 * {
-  font-family: FantasqueSansMono Nerd Font;
-  font-size: 17px;
-  min-height: 0;
+    font-family: "Caskaydia Mono Nerd Font", monospace;
+    font-size: 12px;
+    color: #e5e5e5;
+    border: none;
+    padding: 0;
+    margin: 0;
+    transition: all 0.2s ease;
 }
 
-#waybar {
-  background: transparent;
-  color: @text;
-  margin: 5px 5px;
+window#waybar {
+    background: rgba(20, 20, 20, 0.8);
+    border: none;
+    color: #e5e5e5;
+    padding: 4px 6px; /* smaller horizontal padding to avoid overflow */
+    margin: 0;        /* no margin — prevents clipping on edges */
 }
+
+/* === Workspaces === */
 
 #workspaces {
-  border-radius: 1rem;
-  margin: 5px;
-  background-color: @surface0;
-  margin-left: 1rem;
+    margin-left: 4px;
 }
 
 #workspaces button {
-  color: @lavender;
-  border-radius: 1rem;
-  padding: 0.4rem;
+    padding: 2px 8px;
+    margin: 0 3px;
+    border-radius: 6px;
+    background: transparent;
+    color: #888;
 }
 
 #workspaces button.active {
-  color: @sky;
-  border-radius: 1rem;
+    background: #444;
+    color: #fff;
 }
 
 #workspaces button:hover {
-  color: @sapphire;
-  border-radius: 1rem;
+    background: #555;
+    color: #fff;
 }
 
-#custom-music,
-#tray,
-#backlight,
+/* === Modules === */
+
 #clock,
 #battery,
+#cpu,
+#memory,
+#network,
 #pulseaudio,
-#custom-lock,
-#custom-power {
-  background-color: @surface0;
-  padding: 0.5rem 1rem;
-  margin: 5px 0;
+#tray {
+    padding: 0 8px;
+    margin: 0 2px;
+    border-radius: 6px;
+    background: rgba(40, 40, 40, 0.6);
 }
+
+/* prevent rightmost module clipping */
+#tray {
+    margin-right: 0;
+    padding-right: 6px;
+}
+
+/* === States === */
+
+#battery.critical {
+    color: #ff6b6b;
+}
+
+#pulseaudio.muted {
+    color: #888;
+}
+
+/* === Clock === */
 
 #clock {
-  color: @blue;
-  border-radius: 0px 1rem 1rem 0px;
-  margin-right: 1rem;
+    font-weight: bold;
+    background: none;
 }
 
-#battery {
-  color: @green;
+/* === Hover feedback === */
+
+#battery:hover,
+#cpu:hover,
+#memory:hover,
+#network:hover,
+#pulseaudio:hover {
+    background: rgba(60, 60, 60, 0.8);
 }
 
-#battery.charging {
-  color: @green;
-}
-
-#battery.warning:not(.charging) {
-  color: @red;
-}
-
-#backlight {
-  color: @yellow;
-}
-
-#backlight, #battery {
-    border-radius: 0;
-}
-
-#pulseaudio {
-  color: @maroon;
-  border-radius: 1rem 0px 0px 1rem;
-  margin-left: 1rem;
-}
-
-#custom-music {
-  color: @mauve;
-  border-radius: 1rem;
-}
-
-#custom-lock {
-    border-radius: 1rem 0px 0px 1rem;
-    color: @lavender;
-}
-
-#custom-power {
-    margin-right: 1rem;
-    border-radius: 0px 1rem 1rem 0px;
-    color: @red;
-}
-
-#tray {
-  margin-right: 1rem;
-  border-radius: 1rem;
-}
