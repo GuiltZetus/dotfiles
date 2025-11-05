@@ -1,0 +1,44 @@
+@theme "/usr/share/rofi/themes/gruvbox-dark-hard.rasi"
+
+* {
+    /* Terminal color palette */
+    black:  #7B542F;
+    blue:   #B6771D;
+    green:  #FF9D00;
+    orange: #B6771D;
+    red:    #7B542F;
+    white:  #FFCF71;
+    yellow: #FF9D00;
+
+    /* Overrides */
+    bg:           #1d2021;
+    bg-alt:       #282828;
+    bg-highlight: #3c3836;
+    fg:           @white;
+    accent:       @orange;
+    border-color: @orange;
+    highlight:    @yellow;
+}
+
+window {
+    border: 2px;
+    border-color: @accent;
+    background-color: @bg;
+}
+
+element {
+    text-color: @fg;
+    background-color: @bg-alt;
+}
+
+element selected {
+    background-color: @highlight;
+    text-color: @bg;
+}
+
+inputbar {
+    background-color: @bg-alt;
+    text-color: @fg;
+    border: 1px solid @accent;
+}
+

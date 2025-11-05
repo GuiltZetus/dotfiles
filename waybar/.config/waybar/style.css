@@ -1,45 +1,54 @@
 /* === Waybar Minimalistic Style (Fixed Padding) === */
 
 * {
-    font-family: "Caskaydia Mono Nerd Font", monospace;
-    font-size: 12px;
-    color: #e5e5e5;
-    border: none;
-    padding: 0;
-    margin: 0;
-    transition: all 0.2s ease;
+  font-family: "Caskaydia Mono Nerd Font", monospace;
+  font-size: 12px;
+  /* Retaining a light color for main text */
+  color: #FFCF71;
+  border: none;
+  padding: 0;
+  margin: 0;
+  transition: all 0.2s ease;
 }
 
 window#waybar {
-    background: rgba(20, 20, 20, 0.8);
-    border: none;
-    color: #e5e5e5;
-    padding: 4px 6px; /* smaller horizontal padding to avoid overflow */
-    margin: 0;        /* no margin — prevents clipping on edges */
+  /* Dark, slightly transparent background */
+  background: rgba(20, 20, 20, 0.8);
+  border: none;
+  color: #FFCF71;
+  padding: 4px 6px;
+  /* smaller horizontal padding to avoid overflow */
+  margin: 0;
+  /* no margin — prevents clipping on edges */
 }
 
 /* === Workspaces === */
 
 #workspaces {
-    margin-left: 4px;
+  margin-left: 4px;
 }
 
 #workspaces button {
-    padding: 2px 8px;
-    margin: 0 3px;
-    border-radius: 6px;
-    background: transparent;
-    color: #888;
+  padding: 2px 8px;
+  margin: 0 3px;
+  border-radius: 6px;
+  background: transparent;
+  /* Inactive text color: Lightest shade */
+  color: #FFCF71;
 }
 
 #workspaces button.active {
-    background: #444;
-    color: #fff;
+  /* Active background color: Medium Gold/Brown */
+  background: #B6771D;
+  /* Active text color: Darkest shade */
+  color: #7B542F;
 }
 
 #workspaces button:hover {
-    background: #555;
-    color: #fff;
+  /* Hover background: Brightest shade */
+  background: #FF9D00;
+  /* Hover text color: Darkest shade */
+  color: #7B542F;
 }
 
 /* === Modules === */
@@ -51,33 +60,38 @@ window#waybar {
 #network,
 #pulseaudio,
 #tray {
-    padding: 0 8px;
-    margin: 0 2px;
-    border-radius: 6px;
-    background: rgba(40, 40, 40, 0.6);
+  padding: 0 8px;
+  margin: 0 2px;
+  border-radius: 6px;
+  /* Module background: Darker shade, semi-transparent */
+  background: rgba(40, 40, 40, 0.6);
 }
 
 /* prevent rightmost module clipping */
 #tray {
-    margin-right: 0;
-    padding-right: 6px;
+  margin-right: 0;
+  padding-right: 6px;
 }
 
 /* === States === */
 
 #battery.critical {
-    color: #ff6b6b;
+  /* Critical color: Muted Dark Brown */
+  color: #7B542F;
+  /* Add a solid background to draw attention */
+  background: #FF9D00;
 }
 
 #pulseaudio.muted {
-    color: #888;
+  /* Muted icon color: Medium Gold/Brown */
+  color: #B6771D;
 }
 
 /* === Clock === */
 
 #clock {
-    font-weight: bold;
-    background: none;
+  font-weight: bold;
+  background: none;
 }
 
 /* === Hover feedback === */
@@ -87,6 +101,9 @@ window#waybar {
 #memory:hover,
 #network:hover,
 #pulseaudio:hover {
-    background: rgba(60, 60, 60, 0.8);
+  /* Module hover: Bright Orange/Gold with transparency */
+  background: rgba(255, 157, 0, 0.8);
+  /* Using rgba for #FF9D00 */
+  color: #7B542F;
+  /* Dark text on hover */
 }
-

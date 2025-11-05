@@ -19,7 +19,10 @@ alias copy='wl-copy'
 alias paste='wl-paste -n'
 
 #oh my posh init
-eval "$(oh-my-posh init bash --config "https://github.com/JanDeDobbeleer/oh-my-posh/blob/main/themes/M365Princess.omp.json")"
+eval "$(oh-my-posh init bash --config ~/.dotfiles/oh-my-posh/config.omp.json)"
+
+#auto start
+fastfetch
 
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
